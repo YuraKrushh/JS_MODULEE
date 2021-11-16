@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ClassWork Lesson_1</title>
+</head>
+<body>
+
+
+
+
+
+<script>
+
+
+// TASK 1
+document.write(`<div><h3>TASK 1</h3></div>`)
+let array = [];
+let result = 0;
+document.write("Array =");
+for ( let i = 0; i < 10; i++ ){
+    array[i] = Math.random()*100;
+    document.write(` ${Math.floor(array[i])}`);
+}
+for (let i=0; i<10; i++) {
+    result = result+Math.floor(array[i]);
+}
+document.write(`<div>Sum = ${result}</div>`)
+// END OF TASK 1
+
+
+// TASK 2
+document.write(`<div><h3>TASK 2</h3></div>`)
+let book = {
+    name: 'Book name',
+    pages:'Number of pages',
+    genre:'Genre'
+}
+document.write(`${book.name}  `)
+document.write(`${book.pages} `)
+document.write(`${book.genre} `)
+// END OF TASK 2
+
+
+// TASK 3
+document.write(`<div><h3>TASK 3</h3></div>`)
+let book0 = {
+    name: 'Book name',
+    pages:'Number of pages',
+    genre:'Genre',
+    author:'Author'
+}
+document.write(`${book0.name}  `)
+document.write(`${book0.pages} `)
+document.write(`${book0.genre} `)
+document.write(`${book0.author} `)
+// END OF TASK 3
+
+
+// TASK 4
+document.write(`<div><h3>TASK 4</h3></div>`)
+let arr = [
+    book1 = {name:'Book1', pages:'Pages100', genre:'Genre1', author:'Author1' },
+    book2 = {name:'Book2', pages:'Pages200', genre:'Genre2', author:'Author2' },
+    book3 = {name:'Book3', pages:'Pages300', genre:'Genre3', author:'Author3' }
+]
+document.write(book2.genre)
+// END OF TASK 4
+
+
+// TASK 5
+document.write(`<div><h3>TASK 5</h3></div>`)
+let height = 23;
+let width = 10;
+let s =  (height*width);
+document.write('Площа = ' + s + 'см');
+// END OF TASK 5
+
+
+// TASK 6
+document.write(`<div><h3>TASK 6</h3></div>`)
+let heightC = 10;
+let dC = 4;
+let r = dC/2;
+const Pi = 3.14;
+let v = Pi * Math.pow(r,2) * heightC;
+document.write('Обєм = ' + Math.floor(v) + 'м');
+//END OF TASK 6
+
+
+//TASK 7
+document.write(`<div><h3>TASK 7</h3></div>`)
+let n = 3;
+let m = 4;
+let k;
+let k2;
+k2 = m**2 + n**2;
+k = Math.pow (k2, 1/2);
+document.write('Гіпотенуза = ' + k );
+
+
+</script>
+
+
+
+</body>
+</html>
