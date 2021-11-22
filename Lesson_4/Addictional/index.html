@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>additional Lesson_4</title>
+</head>
+<body>
+
+
+<script>
+
+//створити функцію, яка якщо приймає один аргумент, просто вивдоить його, якщо два аргументи - складає або конкатенує їх між собою.
+function  task1 (a,b) {
+    if( typeof(b) === 'undefined') {
+        console.log(a);
+    } else {
+        console.log(a + b);
+    }
+}
+
+//task1('ad', 'dd');
+//end
+
+
+//створити функцію  яка приймає два масиви та скаладає значення елементів з однаковими індексами  та повертає новий результуючий масив.
+let arr1 = [1,2,3,4,5];
+let arr2 = [11,22,33,44,55,101,12,12,33];
+function task2 (a,b) {
+    let arr3 = [];
+    if ( a.length >= b.length) {
+    for (let i = 0; i < a.length; i++) {
+        if ( typeof (b[i]) === 'undefined') {
+            arr3[i] = a[i];
+        } else {
+            arr3[i] = a[i] + b[i];
+        }
+    }
+    } else{
+        for (let i = 0; i < b.length; i++) {
+            if ( typeof (a[i]) === 'undefined') {
+                arr3[i] = b[i];
+            } else {
+                arr3[i] = a[i] + b[i];
+            }
+        }
+    }
+    console.log(arr3)
+}
+
+//task2(arr1,arr2);
+//end
+
+
+//Створити функцію яка приймає масив будь яких объектів, та повертає масив ключів всіх обєктів
+let arr = [{name: 'Dima', age: 13}, {model: 'Camry'},{name: 'Dima', age: 13, city: 'Lviv', code: 7345}];
+function task3(arr) {
+    let empty = [];
+    for ( let i = 0; i < arr.length; i++) {
+         empty.push((Object.keys(arr[i])));
+    } let emp = empty.join().split(' ');
+        let emp1 = emp[0].split(',');
+      console.log(emp1);
+}
+
+//console.log(Object.keys(arr[1]))
+//task3(arr);
+
+
+//Створити функцію яка приймає масив будь яких объектів, та повертає масив значень всіх обєктів
+function task4(arr) {
+    let empty = [];
+    for (let i = 0; i < arr.length; i++) {
+    for ( const [a, b] of Object.entries(arr[i])) {
+        empty.push(b);
+    }
+    } console.log(empty);
+}
+
+//task4(arr);
+//end
+
+
+
+</script>
+
+
+</body>
+</html>
