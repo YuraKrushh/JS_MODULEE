@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ClassWork Lesson_4</title>
+</head>
+<body>
+
+
+<script>
+
+//створити функцію яка приймає три числа та виводить найменьше. (Без Math.min!)
+function min (a,b,c) {
+    if ( a <= b && a <= c ) {
+        console.log(a);
+    } else if ( b <= a && b <= c) {
+        console.log(b);
+    } else {
+        console.log(c);
+    }
+}
+
+//min(11,10,12)
+//end
+
+
+//створити функцію яка приймає три числа та виводить найбільше. (Без Math.max!)
+function max (a,b,c) {
+    if (a >= b && a >= c) {
+        console.log(a);
+    } else if ( b >= a && b >= c) {
+        console.log(b);
+    } else {
+        console.log(c);
+    }
+}
+
+//max(33,34,44);
+//end
+
+
+//створити функцію яка повертає найбільше число з масиву
+let arr = [12,12,34,55,3,122,11,54,10];
+function maxArr (a) {
+    max = a[0];
+    for ( const i of a) {
+        if ( i > max) {
+            max = i;
+        }
+    }
+    console.log(max);
+}
+
+//maxArr(arr)
+//end
+
+
+//створити функцію яка повертає найменьше число з масиву
+function minArr (a) {
+    min = a[0];
+    for (let i of a) {
+        if (i < min) {
+            min = i;
+        }
+    }
+    console.log(min);
+}
+
+//minArr(arr);
+//end
+
+
+//створити функцію яка приймає масив чисел, сумує значення елементів масиву та повертає його.
+function sumArr (a) {
+    let sum = 0;
+    for ( let i of a) {
+        sum += i;
+    }
+    console.log(sum);
+}
+
+//sumArr(arr)
+//end
+
+
+//створити функцію яка приймає масив чисел та повертає середнє арифметичне його значень.
+function sa (a) {
+    let sum = 0;
+    for ( let i of a) {
+        sum += i;
+    }
+    let sa = sum / a.length;
+    console.log(sa);
+}
+
+//sa(arr);
+//end
+
+
+//створити функцію яка приймає будь-яку кількість чисел, повертає найменьше, а виводить найбільше
+function minmax () {
+    let max = 0;
+    for ( let i of arguments) {
+        if ( max < i ) {
+            max = i;
+        }
+    } console.log(max);
+    let min = max;
+    for (let i of arguments) {
+        if (min > i) {
+            min = i;
+        }
+    } return min;
+}
+
+//console.log(minmax(12,2,3,33,223,0,33,45));
+//end
+
+
+//створити функцію яка заповнює масив рандомними числами
+
+function randomArr (a) {
+    let arrEmpty = [];
+    for ( let i = 0; i < a; i++) {
+        arrEmpty[i] = Math.round(Math.random()*100);
+    } return arrEmpty;
+}
+
+//console.log(randomArr(13));
+//end
+
+
+//створити функцію яка заповнює масив рандомними числами в діапазоні від 0 до limit.
+// limit - аргумент, який характеризує кінцеве значення діапазону.
+function randomArrWithLimit (a,limit) {
+    let arrEmpty = [];
+    for ( let i = 0; i < a; i++) {
+        arrEmpty[i] = Math.round(Math.random()*limit);
+    } return arrEmpty;
+}
+//console.log(randomArrWithLimit(13,22));
+//end
+
+
+//Функція приймає масив та робить з нього новий масив в зворотньому порядку.
+let aer = [1,2,3,4,5]
+function reverse (a) {
+    let b = [];
+    let c = a.length - 1;
+    for ( let i = 0; i < a.length; i++) {
+        b[i] = a[c];
+        c--;
+    }console.log(b);
+}
+
+//reverse(aer);
+
+
+
+
+
+</script>
+
+
+</body>
+</html>
