@@ -1,16 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>HomeWork Lesson_4</title>
-</head>
-<body>
-
-
-<script>
-
 //створити функцію яка обчислює та повертає площу прямокутника зі сторонами а і б
-function s (a,b) {
+let s =  (a,b) => {
     let s = a * b;
     console.log('Площа прямокутника = ' + s);
 }
@@ -20,7 +9,7 @@ function s (a,b) {
 
 
 //створити функцію яка обчислює та повертає площу кола з радіусом r
-function r (r) {
+let r = (r) => {
     const p = 3.14;
     let s = p * Math.pow(r, 2);
     console.log(s);
@@ -31,7 +20,7 @@ function r (r) {
 
 
 //створити функцію яка обчислює та повертає площу циліндру висотою h, та радіутом r
-function hr (h,r) {
+let hr = (h,r) => {
     const p = 3.14;
     let s = (2 * p * r * h) + (2 * p * Math.pow(r, 2));
     console.log(s);
@@ -43,7 +32,7 @@ function hr (h,r) {
 
 //створити функцію яка приймає масив та виводить кожен його елемент
 let arr = [1, 2, 3, 4, 5, 6, 7];
-function view (a) {
+let view = (a) => {
     for ( let i of a) {
         console.log(i);
     }
@@ -54,16 +43,16 @@ function view (a) {
 
 
 //створити функцію яка створює параграф з текстом. Текст задати через аргумент
-function txt (a) {
+let txt = (a) => {
     document.write(`<p>${a}</p>`);
 }
 
-txt('Some text Some text Some text Some text Some text Some text');
+//txt('Some text Some text Some text Some text Some text Some text');
 //end
 
 
 //створити функцію яка створює ul з трьома елементами li. Текст li задати через аргумент всім однаковий
-function list (a) {
+let list = (a) => {
     document.write(`<ul>
                         <li>${a}</li>
                         <li>${a}</li>
@@ -76,12 +65,12 @@ function list (a) {
 
 
 //Текст li задати через аргумент всім однаковий. Кількість li визначається другим аргументом, який є числовим (тут використовувати цикл)
-function listWithNumbers (a,b) {
+let listWithNumbers = (a,b) => {
     document.write(`<ul>`)
-        for (let i = 1; i <= b; i++ ) {
-            document.write(`<li>${a + ' ' + i}</li>`)
-        }
-        document.write(`</ul>`);
+    for (let i = 1; i <= b; i++ ) {
+        document.write(`<li>${a + ' ' + i}</li>`)
+    }
+    document.write(`</ul>`);
 }
 
 //listWithNumbers('txt list', 15);
@@ -90,7 +79,7 @@ function listWithNumbers (a,b) {
 
 //створити функцію яка приймає масив примітивних елементів (числа,стрінги,булеві), та будує для них список
 let array = [1,2,3, 'txt', 'txt2', 'txt3', true, false];
-function listArr (a) {
+let listArr = (a) => {
     document.write(`<ul>`)
     for (let i = 0; i < a.length; i++ ) {
         document.write(`<li>${a[i]}</li>`)
@@ -120,7 +109,7 @@ let ar = [ {
     }
 ]
 
-function viewArr (a) {
+let viewArr = (a) => {
     for (let i = 0; i < a.length; i++) {
         document.write(`<div>id: ${a[i].id}  name: ${a[i].name}  age: ${a[i].age}</div>`)
     }
@@ -129,11 +118,3 @@ function viewArr (a) {
 
 //viewArr(ar);
 //end
-
-
-</script>
-
-
-
-</body>
-</html>
