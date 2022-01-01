@@ -30,7 +30,6 @@ for ( let i of users) {
                 return JSON.stringify(obj) === _thing;
             });
         });
-        console.log(uniqueArray);
         localStorage.setItem('favourites', JSON.stringify(uniqueArray));
     }
 
