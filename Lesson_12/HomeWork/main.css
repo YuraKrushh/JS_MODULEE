@@ -1,0 +1,56 @@
+.wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    width: 100%;
+}
+
+.post {
+    width: 18.4%;
+    margin: 5px;
+    border: 2px solid black;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.title {
+    display: flex;
+    justify-content: space-around;
+    font-size: 23px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+.body {
+    margin-bottom: 10px;
+}
+.id {
+    font-weight: bold;
+    width: max-content;
+    background-color: cornsilk;
+}
+.wrapper_com {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.comment {
+    width: 30%;
+    margin: 10px;
+    padding: 10px;
+    border: 2px solid black ;
+}
+.name {
+    font-size: 23px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+.body_com {
+    margin-bottom: 10px;
+}
+.id_post {
+    font-weight: bold;
+    width: max-content;
+    background-color: cornsilk;
+}
