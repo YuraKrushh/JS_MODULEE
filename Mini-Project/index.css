@@ -1,0 +1,35 @@
+body {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+.user_div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 48%;
+    margin: 5px;
+    border: 2px solid black;
+    padding: 5px;
+    height: max-content;
+    background-color: floralwhite;
+}
+.name {
+    border-bottom: 1px solid black;
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+.username {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+.email {
+    font-size: 18px;
+    border-bottom: 1px solid black;
+    padding-bottom: 10px;
+}
+.button_details {
+    margin-top: 10px;
+    font-size: 20px;
+}
